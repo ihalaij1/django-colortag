@@ -31,7 +31,7 @@ function django_colortag_badge(colortag, options_) {
     classes.push('btn');
   }
   if (options['badge']) {
-    classes.push('badge');
+    classes.push('badge', 'badge-' + (options['size'] || 'xs'));
   }
   if (options['class']) {
     classes.push(options['class'].split(' '));

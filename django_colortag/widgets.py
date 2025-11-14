@@ -36,7 +36,7 @@ def get_colortag_classes(colortag, options):
     if options.get('button'):
         cls.add('btn')
     if options.get('badge'):
-        cls.add('badge')
+        cls.update(('badge', 'badge-{}'.format(options.get('size', 'xs'))))
     if options.get('class'):
         cls.update(options['class'].split(' '))
     return cls

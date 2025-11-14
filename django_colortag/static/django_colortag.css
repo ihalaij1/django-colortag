@@ -34,6 +34,20 @@
 	top: 2px
 }
 
+/* Badge size variants */
+.badge-xs {
+    font-size: 0.8rem !important;
+    padding: 0.25em 0.4em;
+}
+.badge-sm {
+    font-size: 0.9rem !important;
+}
+.badge-lg {
+    font-size: 1.25rem !important;
+}
+.badge-xl {
+    font-size: 1.5rem !important;
+}
 
 /* Include exclude buttons */
 .colortag-inc-exc {
