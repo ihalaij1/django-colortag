@@ -35,8 +35,8 @@ def get_colortag_classes(colortag, options):
         cls.add('colortag-active')
     if options.get('button'):
         cls.add('btn')
-    if options.get('label'):
-        cls.update(('label', 'label-{}'.format(options.get('size', 'xs'))))
+    if options.get('badge'):
+        cls.add('badge')
     if options.get('class'):
         cls.update(options['class'].split(' '))
     return cls
@@ -307,12 +307,12 @@ class ColortagIEAndOrWidget(widgets.MultiWidget):
                 'helptext': helptext,
                 'or': {
                     'data-bs-toggle': 'tooltip',
-                    'data-html': "true",
+                    'data-bs-html': "true",
                     'title': or_tooltip,
                 },
                 'and': {
                     'data-bs-toggle': 'tooltip',
-                    'data-html': "true",
+                    'data-bs-html': "true",
                     'title': and_tooltip,
                 },
             }),

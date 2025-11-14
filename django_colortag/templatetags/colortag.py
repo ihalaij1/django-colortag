@@ -19,8 +19,7 @@ def render_as_button(
         'element': 'span',
         # 'tooltip_trigger': 'hover',
         # 'tooltip_placement': 'top',
-        # 'size': 'xs',
-        'label': True,
+        'badge': True,
         'button': True,
     }
     if extra:

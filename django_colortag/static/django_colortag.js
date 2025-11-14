@@ -1,10 +1,10 @@
-function django_colortag_label(colortag, options_) {
+function django_colortag_badge(colortag, options_) {
   // Almost a direct port of templatetags/colortag.py:render_as_button
   const default_options = {
     active: true,
     static: true,
     element: 'span',
-    label: true,
+    badge: true,
   }
   const options = jQuery.extend({}, default_options, options_);
 
@@ -30,8 +30,8 @@ function django_colortag_label(colortag, options_) {
   if (options['button']) {
     classes.push('btn');
   }
-  if (options['label']) {
-    classes.push('label', 'label-' + (options['size'] || 'xs'));
+  if (options['badge']) {
+    classes.push('badge');
   }
   if (options['class']) {
     classes.push(options['class'].split(' '));
