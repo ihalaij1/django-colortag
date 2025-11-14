@@ -87,5 +87,10 @@ window.addEventListener("load", (event) => {
    g.addEventListener('contextmenu', (e) => selectNextOption(e, 2));
   }
 
-  $('[data-bs-toggle="popover"]').popover();
+  // Bootstrap 5 popover initialization with jQuery
+  $('[data-bs-toggle="popover"]').each(function() {
+    if (this) {
+      try { new bootstrap.Popover(this); } catch (_) {}
+    }
+  });
 });
